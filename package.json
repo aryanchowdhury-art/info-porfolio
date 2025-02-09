@@ -1,10 +1,15 @@
 {
+  "homepage": "https://aryanchowdhury-art/github.io/info-porfolio",
   "name": "aryan",
-  "homepage": "https://aryanchowdhury-art.github.io/Portfolio--react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "npm run build && gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "format": "prettier --write.",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
