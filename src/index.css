@@ -1,0 +1,23 @@
+/* index.css */
+
+/* Set a luxurious background color */
+body {
+    background: linear-gradient(135deg, #000000, #BDC3C7); /* Soft gradient background */
+    font-family: 'Georgia', serif;  /* Elegant font */
+    color: #FFF;  /* Text color */
+    background-size: 400% 400%; /* To make the gradient move smoothly */
+    animation: rotateBackground 10s ease infinite; /* Infinite rotation */
+}
+
+/* Keyframes for rotating the background */
+@keyframes rotateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

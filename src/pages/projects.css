@@ -1,0 +1,218 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* ===== Projects Section (AI & ML) ===== */
+.projects {
+    text-align: center;
+    padding: 80px 20px;
+    background: #121212;
+}
+
+/* Section Heading */
+.projects h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.projects p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* ===== Projects Container (Stacked Layout) ===== */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===== Project Card ===== */
+.project-card {
+    background: #1E1E1E;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+}
+
+.project-card h2 {
+    font-size: 1.8rem;
+    color: #FFD700;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* ===== Features Section ===== */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    background: rgba(255, 215, 0, 0.15);
+    color: #FFD700;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-box::before {
+    content: "✔ ";
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+/* ===== Tech Stack ===== */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tech {
+    background: #292929;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+}
+
+/* ===== Project Links ===== */
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.links a {
+    background: none;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+.links a:hover {
+    background: #FFD700;
+    color: #121212;
+}
+
+/* ===== CTA Section ===== */
+.cta {
+    margin-top: 80px;
+    padding: 50px;
+    background: #292929;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* CTA Button */
+.contact-btn {
+    display: inline-block;
+    background: #FFD700;
+    color: #121212;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #ffcc00;
+}
+/* Title & Subtitle */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* ===== Category Filters ===== */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filters button {
+    background: #292929;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.filters button.active,
+.filters button:hover {
+    background: #FFD700;
+    color: #121212;
+}

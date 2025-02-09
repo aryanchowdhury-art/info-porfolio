@@ -1,0 +1,106 @@
+/* ===== Contact Page Styling ===== */
+.contact-container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #1E1E1E;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.2); /* Soft golden glow */
+    text-align: center;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 10px;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Contact Items */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #292929;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .contact-item:hover {
+    background: rgba(255, 215, 0, 0.2); /* Golden subtle hover */
+  }
+  
+  /* Clickable Links (Email, LinkedIn, GitHub) */
+  .contact-link {
+    text-decoration: none;
+  }
+  
+  .contact-link .contact-item {
+    cursor: pointer;
+  }
+  
+  .contact-link .contact-item:hover {
+    background: rgba(255, 215, 0, 0.4); /* Stronger hover effect */
+  }
+  
+  /* Email, LinkedIn, GitHub Labels */
+  .contact-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700;
+  }
+  
+  .contact-value {
+    font-size: 1.1rem;
+    color: white;
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  /* Copy Button Styling */
+  .copy-btn {
+    background: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    position: absolute;
+    right: 20px;
+  }
+  
+  .contact-item:hover .copy-btn {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .copy-btn:hover {
+    background: #FFD700;
+    color: #1E1E1E;
+  }
+  
+  .copied {
+    background: #FFD700 !important;
+    color: #1E1E1E !important;
+    border-color: #FFD700 !important;
+  }
+  
